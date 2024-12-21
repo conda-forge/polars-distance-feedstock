@@ -1,5 +1,5 @@
 {% set name = "polars-distance" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/polars_distance-{{ version }}.tar.gz
-    sha256: a58c6d28799bce1455ff64fc5b3f6a2b22e16157eb651bb54d0303e8cddca618
+    sha256: 40d32dc5006c4da6cb9a6e5b06bde7490b7169c7b51b85ce6fe9d320ba143fe3
   - url: https://raw.githubusercontent.com/ion-elgreco/polars-distance/main/LICENSE
     sha256: 017feb4ae87126410f1d9beb6af4c9df3c25a0051d87db66da6f26c509f5348d
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<310]
 
 requirements:
